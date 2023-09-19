@@ -157,7 +157,7 @@ footer #contacts {
   height: 26px;
   width: 155px;
   margin: 0 auto;
-  padding: 50px 0; 
+  padding: 50px 0;
 }
 
 footer li {
@@ -172,10 +172,10 @@ footer li:last-child {
 }
 
 footer #social_media {
-  width: 33%;
+  width: 50px;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 
 footer img {
@@ -188,55 +188,95 @@ footer p {
   padding: 20px;
 }
 
-
-
 /* MEDIA QUERY */
 
-@media screen and (min-width:576px) {
-    /* .gallerie {
+@media screen and (min-width: 576px) {
+  /* .gallerie {
         content: url(../);
     } */
 
-    header {
-        background-image: url(../img/desktop/image-hero.jpg);
-        height: 50vw;
-      }
-      header #text_cover {
-        display: flex;
-        justify-content: flex-start;    
-        /* align-items: center;   */
-      }
-      header h1 {
-        width: auto;
-        font-size: 70px;
-      }
-      nav ul {
-        display: inline;
-      }
+  header {
+    background-image: url(../img/desktop/image-hero.jpg);
+    height: 50vw;
+  }
+  header #text_cover {
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center;   */
+  }
+  header h1 {
+    width: auto;
+    font-size: 70px;
+  }
+  nav ul {
+    display: inline;
+  }
 
-      nav li {
-        background-color: rgba(255, 255, 255, 0);
-     
-      }
-      main #leader-img_text {
-        position: relative;
-      }
+  nav li {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  main #leader-img_text {
+    position: relative;
+  }
 
-      main #img_leader {
-        width: 50%;
-      }
+  main #img_leader {
+    width: 60%;
+  }
 
-     /* #text_leader {
-        position: absolute;
-     } */
-}
+  /* SECTION THE_LEADER  */
+
+  main #leader-img_text {
+    position: relative;
+  }
+
+  main #text_leader {
+    position: absolute;
+    width: 500px;
+    background-color: white;
+    bottom: 10px;
+    right: 100px;
+    padding: 30px;
+  }
+
+  #text_leader p {
+    text-align: left;
+  }
+  main #text_leader h2,
+  p {
+    text-align: left;
+  }
+  .see_all {
+    position: relative;
+  }
+  #see_all {
+    position: absolute;
+    top: 30px;
+    right: 0;
+  }
+  #the_leader h2 {
+    text-align: left;
+  }
+
+  /* FOOTER */
 
 
-@media screen and (min-width:1024px) {
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        
-      }
+  footer  #contacts {
+    display: flex;
+    justify-content: space-between;   
       
+  }
+
+#contacts li {
+    display: inline;
+    
+    
+  }
+  footer #col-left {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start;
+    align-items: flex-start; */
+    text-align: left;
+    margin: 0;
+  }
 }
