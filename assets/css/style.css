@@ -1,0 +1,242 @@
+@font-face {
+  font-family: Alata;
+  src: url(../fonts/Alata/Alata-Regular.ttf);
+}
+
+@font-face {
+  font-family: Josefin;
+  src: url(../fonts/Josefin/JosefinSans-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Alata;
+}
+
+img,
+input {
+  width: 100%;
+}
+
+/* HEADER */
+
+header {
+  background-image: url(../img/mobile/image-hero.jpg);
+  height: 200vw;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header #text_cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: relative;
+height: 100%; */
+}
+
+header h1 {
+  color: white;
+  font-family: Josefin;
+  font-weight: 300;
+  font-size: 40px;
+  text-transform: uppercase;
+  border: 1px solid white;
+  padding: 15px;
+  /* position: absolute;
+  top:20%; */
+}
+
+/* NAVBAR */
+nav ul {
+  /* display: none; */
+}
+
+nav li {
+  color: white;
+  list-style: none;
+  background-color: black;
+  font-family: Josefin;
+  font-weight: 300;
+}
+#check:checked ~ ul {
+  display: flex;
+}
+header #check {
+  display: none;
+}
+
+header #logo {
+  height: 26px;
+  width: 155px;
+  margin: 40px;
+}
+header #burger {
+  width: 20px;
+  height: 14px;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+/* MAIN */
+#text_cover,
+#the_leader {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+/* SECTION THE_LEADER  */
+
+main #leader-img_text {
+  margin-top: 90px;
+}
+
+main #img_leader {
+  margin-bottom: 30px;
+}
+
+#the_leader h2 {
+  font-family: Josefin;
+  font-weight: 300;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#the_leader p {
+  color: grey;
+  font-family: Alata;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+/* GALLERIE */
+.gallerie {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.gallerie IMG {
+  filter: grayscale(20%);
+}
+main h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  color: white;
+  font-family: Josefin;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+main #see_all {
+  font-family: Josefin;
+  font-weight: 300;
+  letter-spacing: 5px;
+  border: 1px solid black;
+  padding: 10px 30px;
+  width: 190px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+/* FOOTER */
+footer #contacts {
+  background-color: black;
+}
+
+#logo_footer {
+  height: 26px;
+  width: 155px;
+  margin: 0 auto;
+  padding: 50px 0; 
+}
+
+footer li {
+  color: white;
+  list-style: none;
+  padding: 15px;
+  text-align: center;
+}
+
+footer li:last-child {
+  margin-bottom: 30px;
+}
+
+footer #social_media {
+  width: 33%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+footer img {
+  padding: 10px;
+}
+
+footer p {
+  color: gray;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+/* MEDIA QUERY */
+
+@media screen and (min-width:576px) {
+    /* .gallerie {
+        content: url(../);
+    } */
+
+    header {
+        background-image: url(../img/desktop/image-hero.jpg);
+        height: 50vw;
+      }
+      header #text_cover {
+        display: flex;
+        justify-content: flex-start;    
+        /* align-items: center;   */
+      }
+      header h1 {
+        width: auto;
+        font-size: 70px;
+      }
+      nav ul {
+        display: inline;
+      }
+
+      nav li {
+        background-color: rgba(255, 255, 255, 0);
+     
+      }
+      main #leader-img_text {
+        position: relative;
+      }
+
+      main #img_leader {
+        width: 50%;
+      }
+
+     /* #text_leader {
+        position: absolute;
+     } */
+}
+
+
+@media screen and (min-width:1024px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        
+      }
+      
+}
